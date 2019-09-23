@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02F3C22668A9C1A440023DF3 /* Pods_TechMonsterOnline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27BB58506511FFE64F6E110 /* Pods_TechMonsterOnline.framework */; };
 		664ADE0B2327C2C30034AECC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE0A2327C2C30034AECC /* AppDelegate.swift */; };
 		664ADE102327C2C30034AECC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE0E2327C2C30034AECC /* Main.storyboard */; };
 		664ADE132327C2C30034AECC /* TechMonsterOnline.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE112327C2C30034AECC /* TechMonsterOnline.xcdatamodeld */; };
@@ -22,7 +23,7 @@
 		664ADE5D2327C55E0034AECC /* yusya.png in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE442327C55E0034AECC /* yusya.png */; };
 		664ADE5E2327C55E0034AECC /* monster.png in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE452327C55E0034AECC /* monster.png */; };
 		664ADE602327C55E0034AECC /* TechMonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE482327C55E0034AECC /* TechMonManager.swift */; };
-		664ADE612327C55E0034AECC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE492327C55E0034AECC /* Character.swift */; };
+		664ADE612327C55E0034AECC /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE492327C55E0034AECC /* PlayerModel.swift */; };
 		664ADE622327C55E0034AECC /* SE_fanfare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE4B2327C55E0034AECC /* SE_fanfare.mp3 */; };
 		664ADE632327C55E0034AECC /* BGM_battle001.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE4C2327C55E0034AECC /* BGM_battle001.mp3 */; };
 		664ADE652327C55E0034AECC /* SE_fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE4E2327C55E0034AECC /* SE_fire.mp3 */; };
@@ -33,6 +34,12 @@
 		664ADE6B2327C55E0034AECC /* misaki_gothic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 664ADE552327C55E0034AECC /* misaki_gothic.ttf */; };
 		664ADE6D2327CCE70034AECC /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE6C2327CCE70034AECC /* LobbyViewController.swift */; };
 		664ADE6F2327CCFE0034AECC /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664ADE6E2327CCFE0034AECC /* BattleViewController.swift */; };
+		668375FD232A913000FF8121 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 668375FC232A913000FF8121 /* GoogleService-Info.plist */; };
+		668F168E2335C28900F4F818 /* DBCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F168D2335C28900F4F818 /* DBCommunicationManager.swift */; };
+		668F16902335D68300F4F818 /* MyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F168F2335D68300F4F818 /* MyPlayer.swift */; };
+		668F16922335FFE600F4F818 /* BattleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668F16912335FFE600F4F818 /* BattleManager.swift */; };
+		E07F34FC2067F558B09227A9 /* Pods_TechMonsterOnlineUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93069BB3982EE1B8F787666E /* Pods_TechMonsterOnlineUITests.framework */; };
+		F1EA5F63333023C81A9151CF /* Pods_TechMonsterOnlineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D5E54A646FE74DDC509750 /* Pods_TechMonsterOnlineTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25CC40EE3922376B11927F8F /* Pods-TechMonsterOnline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnline.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnline/Pods-TechMonsterOnline.debug.xcconfig"; sourceTree = "<group>"; };
+		36D5E54A646FE74DDC509750 /* Pods_TechMonsterOnlineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMonsterOnlineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		391A887FEED86C4757F9FEEE /* Pods-TechMonsterOnlineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnlineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnlineTests/Pods-TechMonsterOnlineTests.debug.xcconfig"; sourceTree = "<group>"; };
 		664ADE072327C2C30034AECC /* TechMonsterOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechMonsterOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		664ADE0A2327C2C30034AECC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		664ADE0F2327C2C30034AECC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,7 +84,7 @@
 		664ADE442327C55E0034AECC /* yusya.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yusya.png; sourceTree = "<group>"; };
 		664ADE452327C55E0034AECC /* monster.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster.png; sourceTree = "<group>"; };
 		664ADE482327C55E0034AECC /* TechMonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechMonManager.swift; sourceTree = "<group>"; };
-		664ADE492327C55E0034AECC /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		664ADE492327C55E0034AECC /* PlayerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
 		664ADE4B2327C55E0034AECC /* SE_fanfare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fanfare.mp3; sourceTree = "<group>"; };
 		664ADE4C2327C55E0034AECC /* BGM_battle001.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BGM_battle001.mp3; sourceTree = "<group>"; };
 		664ADE4E2327C55E0034AECC /* SE_fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SE_fire.mp3; sourceTree = "<group>"; };
@@ -85,6 +95,16 @@
 		664ADE552327C55E0034AECC /* misaki_gothic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = misaki_gothic.ttf; sourceTree = "<group>"; };
 		664ADE6C2327CCE70034AECC /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		664ADE6E2327CCFE0034AECC /* BattleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		668375FC232A913000FF8121 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		668F168D2335C28900F4F818 /* DBCommunicationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBCommunicationManager.swift; sourceTree = "<group>"; };
+		668F168F2335D68300F4F818 /* MyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlayer.swift; sourceTree = "<group>"; };
+		668F16912335FFE600F4F818 /* BattleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleManager.swift; sourceTree = "<group>"; };
+		8C022CD27EA9A3551969C424 /* Pods-TechMonsterOnlineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnlineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnlineTests/Pods-TechMonsterOnlineTests.release.xcconfig"; sourceTree = "<group>"; };
+		93069BB3982EE1B8F787666E /* Pods_TechMonsterOnlineUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMonsterOnlineUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		977E452849E8BCD273DE3283 /* Pods-TechMonsterOnlineUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnlineUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnlineUITests/Pods-TechMonsterOnlineUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF3F1F3E1874E82ADB634E1 /* Pods-TechMonsterOnlineUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnlineUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnlineUITests/Pods-TechMonsterOnlineUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BCC1581BA99B815D5BE472F5 /* Pods-TechMonsterOnline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechMonsterOnline.release.xcconfig"; path = "Pods/Target Support Files/Pods-TechMonsterOnline/Pods-TechMonsterOnline.release.xcconfig"; sourceTree = "<group>"; };
+		D27BB58506511FFE64F6E110 /* Pods_TechMonsterOnline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechMonsterOnline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02F3C22668A9C1A440023DF3 /* Pods_TechMonsterOnline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EA5F63333023C81A9151CF /* Pods_TechMonsterOnlineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07F34FC2067F558B09227A9 /* Pods_TechMonsterOnlineUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +142,8 @@
 				664ADE212327C2C70034AECC /* TechMonsterOnlineTests */,
 				664ADE2C2327C2C70034AECC /* TechMonsterOnlineUITests */,
 				664ADE082327C2C30034AECC /* Products */,
+				9EA64165925226D70DE27561 /* Pods */,
+				E9183FAAF7558340B2672081 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +169,7 @@
 				664ADE462327C55E0034AECC /* Models */,
 				664ADE3B2327C55E0034AECC /* Resource */,
 				664ADE192327C2C70034AECC /* Info.plist */,
+				668375FC232A913000FF8121 /* GoogleService-Info.plist */,
 				664ADE112327C2C30034AECC /* TechMonsterOnline.xcdatamodeld */,
 			);
 			path = TechMonsterOnline;
@@ -195,7 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				664ADE482327C55E0034AECC /* TechMonManager.swift */,
-				664ADE492327C55E0034AECC /* Character.swift */,
+				668F168F2335D68300F4F818 /* MyPlayer.swift */,
+				664ADE492327C55E0034AECC /* PlayerModel.swift */,
+				668F168D2335C28900F4F818 /* DBCommunicationManager.swift */,
+				668F16912335FFE600F4F818 /* BattleManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,6 +251,29 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		9EA64165925226D70DE27561 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25CC40EE3922376B11927F8F /* Pods-TechMonsterOnline.debug.xcconfig */,
+				BCC1581BA99B815D5BE472F5 /* Pods-TechMonsterOnline.release.xcconfig */,
+				391A887FEED86C4757F9FEEE /* Pods-TechMonsterOnlineTests.debug.xcconfig */,
+				8C022CD27EA9A3551969C424 /* Pods-TechMonsterOnlineTests.release.xcconfig */,
+				977E452849E8BCD273DE3283 /* Pods-TechMonsterOnlineUITests.debug.xcconfig */,
+				AFF3F1F3E1874E82ADB634E1 /* Pods-TechMonsterOnlineUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9183FAAF7558340B2672081 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D27BB58506511FFE64F6E110 /* Pods_TechMonsterOnline.framework */,
+				36D5E54A646FE74DDC509750 /* Pods_TechMonsterOnlineTests.framework */,
+				93069BB3982EE1B8F787666E /* Pods_TechMonsterOnlineUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +281,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664ADE322327C2C70034AECC /* Build configuration list for PBXNativeTarget "TechMonsterOnline" */;
 			buildPhases = (
+				22DD7035645EC5A2070BF0C1 /* [CP] Check Pods Manifest.lock */,
 				664ADE032327C2C30034AECC /* Sources */,
 				664ADE042327C2C30034AECC /* Frameworks */,
 				664ADE052327C2C30034AECC /* Resources */,
+				EFA176F921938509542E76B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,6 +300,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664ADE352327C2C70034AECC /* Build configuration list for PBXNativeTarget "TechMonsterOnlineTests" */;
 			buildPhases = (
+				BCDF52E2D897784FD4C6D6EA /* [CP] Check Pods Manifest.lock */,
 				664ADE1A2327C2C70034AECC /* Sources */,
 				664ADE1B2327C2C70034AECC /* Frameworks */,
 				664ADE1C2327C2C70034AECC /* Resources */,
@@ -264,6 +319,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 664ADE382327C2C70034AECC /* Build configuration list for PBXNativeTarget "TechMonsterOnlineUITests" */;
 			buildPhases = (
+				6BA49A6A4DD25CB261DB369D /* [CP] Check Pods Manifest.lock */,
 				664ADE252327C2C70034AECC /* Sources */,
 				664ADE262327C2C70034AECC /* Frameworks */,
 				664ADE272327C2C70034AECC /* Resources */,
@@ -337,6 +393,7 @@
 				664ADE652327C55E0034AECC /* SE_fire.mp3 in Resources */,
 				664ADE5C2327C55E0034AECC /* gold_button.png in Resources */,
 				664ADE622327C55E0034AECC /* SE_fanfare.mp3 in Resources */,
+				668375FD232A913000FF8121 /* GoogleService-Info.plist in Resources */,
 				664ADE152327C2C60034AECC /* Assets.xcassets in Resources */,
 				664ADE5D2327C55E0034AECC /* yusya.png in Resources */,
 				664ADE102327C2C30034AECC /* Main.storyboard in Resources */,
@@ -363,14 +420,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22DD7035645EC5A2070BF0C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMonsterOnline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BA49A6A4DD25CB261DB369D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMonsterOnlineUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCDF52E2D897784FD4C6D6EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechMonsterOnlineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFA176F921938509542E76B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TechMonsterOnline/Pods-TechMonsterOnline-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TechMonsterOnline/Pods-TechMonsterOnline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		664ADE032327C2C30034AECC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				668F16922335FFE600F4F818 /* BattleManager.swift in Sources */,
 				664ADE6F2327CCFE0034AECC /* BattleViewController.swift in Sources */,
 				664ADE602327C55E0034AECC /* TechMonManager.swift in Sources */,
-				664ADE612327C55E0034AECC /* Character.swift in Sources */,
+				668F168E2335C28900F4F818 /* DBCommunicationManager.swift in Sources */,
+				664ADE612327C55E0034AECC /* PlayerModel.swift in Sources */,
+				668F16902335D68300F4F818 /* MyPlayer.swift in Sources */,
 				664ADE6D2327CCE70034AECC /* LobbyViewController.swift in Sources */,
 				664ADE0B2327C2C30034AECC /* AppDelegate.swift in Sources */,
 				664ADE132327C2C30034AECC /* TechMonsterOnline.xcdatamodeld in Sources */,
@@ -546,11 +697,13 @@
 		};
 		664ADE332327C2C70034AECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25CC40EE3922376B11927F8F /* Pods-TechMonsterOnline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JB2SDQGN3;
 				INFOPLIST_FILE = TechMonsterOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -564,11 +717,13 @@
 		};
 		664ADE342327C2C70034AECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC1581BA99B815D5BE472F5 /* Pods-TechMonsterOnline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JB2SDQGN3;
 				INFOPLIST_FILE = TechMonsterOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -582,6 +737,7 @@
 		};
 		664ADE362327C2C70034AECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391A887FEED86C4757F9FEEE /* Pods-TechMonsterOnlineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -603,6 +759,7 @@
 		};
 		664ADE372327C2C70034AECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C022CD27EA9A3551969C424 /* Pods-TechMonsterOnlineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -624,6 +781,7 @@
 		};
 		664ADE392327C2C70034AECC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977E452849E8BCD273DE3283 /* Pods-TechMonsterOnlineUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -644,6 +802,7 @@
 		};
 		664ADE3A2327C2C70034AECC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF3F1F3E1874E82ADB634E1 /* Pods-TechMonsterOnlineUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

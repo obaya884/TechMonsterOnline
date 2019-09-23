@@ -18,7 +18,7 @@
         <!--Lobby View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LobbyViewController" customModule="TechMonsterOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LobbyViewController" id="BYZ-38-t0r" customClass="LobbyViewController" customModule="TechMonsterOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -49,29 +49,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタミナ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EYp-k4-Wlb">
-                                <rect key="frame" x="16" y="405" width="72" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="18"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100 / 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHW-ou-oso">
-                                <rect key="frame" x="96" y="402" width="125" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="24"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3p-6Z-2ig">
-                                <rect key="frame" x="74" y="536" width="227" height="56"/>
+                                <rect key="frame" x="74" y="471" width="227" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
-                                <state key="normal" title="冒険に行く" backgroundImage="gold_button.png">
+                                <state key="normal" title="対戦相手を探す" backgroundImage="gold_button.png">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="toBattleViewButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDY-pe-A0Y"/>
+                                    <action selector="searchingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="7jx-ZC-rVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1X-WS-Yre">
+                                <rect key="frame" x="74" y="573" width="227" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                <state key="normal" title="対戦申し込みを待つ" backgroundImage="gold_button.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="waitingButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="L1X-Kq-8Ng"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,7 +77,6 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="pq5-bu-yhm" id="oKq-7F-u1X"/>
-                        <outlet property="staminaLabel" destination="MHW-ou-oso" id="FDZ-Ta-Oj3"/>
                         <segue destination="cNk-l2-2Fr" kind="presentation" identifier="toBattleViewControllerSegue" modalTransitionStyle="crossDissolve" id="EoG-Sh-LOE"/>
                     </connections>
                 </viewController>
@@ -91,7 +87,7 @@
         <!--Battle View Controller-->
         <scene sceneID="EC7-wY-ZtZ">
             <objects>
-                <viewController id="cNk-l2-2Fr" customClass="BattleViewController" customModule="TechMonsterOnline" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BattleViewController" id="cNk-l2-2Fr" customClass="BattleViewController" customModule="TechMonsterOnline" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEw-QS-EHd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,7 +108,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="attackAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="QHJ-nA-zGX"/>
+                                    <action selector="attackAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="R3r-oK-Lnz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qs1-28-JVB">
@@ -123,7 +119,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="MagicAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="ozc-aX-WJ7"/>
+                                    <action selector="MagicAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="i72-uP-gtH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="of2-Pp-xUP">
@@ -134,7 +130,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="chargeAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="fRs-LT-n8r"/>
+                                    <action selector="chargeAction" destination="cNk-l2-2Fr" eventType="touchUpInside" id="mXN-I5-9Et"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fxi-vl-fCy">
@@ -146,11 +142,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C5I-2B-2Ee" userLabel="Opponent Property View">
-                                <rect key="frame" x="188" y="73" width="170" height="97"/>
+                                <rect key="frame" x="188" y="73" width="170" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="uyq-k6-ZG1">
-                                        <rect key="frame" x="8" y="9" width="130" height="78"/>
+                                        <rect key="frame" x="8" y="9" width="130" height="107"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SOK-v6-BY2">
@@ -187,6 +183,23 @@
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 35" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFY-2R-iKp">
                                                         <rect key="frame" x="40" y="0.0" width="60" height="20"/>
+                                                        <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9bw-4g-B7I">
+                                                <rect key="frame" x="0.0" y="87" width="110" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekK-jj-tYz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MaN-J6-MhW">
+                                                        <rect key="frame" x="40" y="0.0" width="70" height="20"/>
                                                         <fontDescription key="fontDescription" name="MisakiGothic" family="MisakiGothic" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -247,7 +260,7 @@
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f5u-8q-UZT">
+                                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f5u-8q-UZT">
                                                 <rect key="frame" x="0.0" y="87" width="110" height="20"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-fA-ujv">
@@ -263,7 +276,6 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
-                                                <viewLayoutGuide key="safeArea" id="elL-Ga-bWm"/>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -276,18 +288,19 @@
                         <viewLayoutGuide key="safeArea" id="KqL-Lq-Jih"/>
                     </view>
                     <connections>
-                        <outlet property="attackButton" destination="o4Y-hL-X0P" id="w0l-oI-1M7"/>
-                        <outlet property="chargeButton" destination="of2-Pp-xUP" id="bDx-jJ-UYi"/>
-                        <outlet property="magicButton" destination="qs1-28-JVB" id="XS4-6y-2Ch"/>
-                        <outlet property="opponentHPLabel" destination="CwE-Ds-7O8" id="Cmo-h4-cZz"/>
-                        <outlet property="opponentImageView" destination="fxi-vl-fCy" id="G56-dg-gt4"/>
-                        <outlet property="opponentMPLabel" destination="LFY-2R-iKp" id="EHe-b8-MWx"/>
-                        <outlet property="opponentNameLabel" destination="SOK-v6-BY2" id="612-AZ-st9"/>
-                        <outlet property="playerHPLabel" destination="9ny-UF-l1t" id="bde-SJ-gIy"/>
-                        <outlet property="playerImageView" destination="yyo-iQ-jYk" id="oPo-q3-y0k"/>
-                        <outlet property="playerMPLabel" destination="RB0-KS-HPi" id="UPd-K3-2QP"/>
-                        <outlet property="playerNameLabel" destination="sf7-0E-DbQ" id="ybP-I8-UAC"/>
-                        <outlet property="playerTPLabel" destination="deP-mh-Yv9" id="uct-XA-NpU"/>
+                        <outlet property="attackButton" destination="o4Y-hL-X0P" id="ez6-pa-flO"/>
+                        <outlet property="chargeButton" destination="of2-Pp-xUP" id="CnC-D8-jyZ"/>
+                        <outlet property="magicButton" destination="qs1-28-JVB" id="lFa-ho-mb0"/>
+                        <outlet property="opponentHPLabel" destination="CwE-Ds-7O8" id="5fh-gZ-fpm"/>
+                        <outlet property="opponentImageView" destination="fxi-vl-fCy" id="8yV-KE-wcr"/>
+                        <outlet property="opponentMPLabel" destination="LFY-2R-iKp" id="MDj-oi-b7X"/>
+                        <outlet property="opponentNameLabel" destination="SOK-v6-BY2" id="so9-um-KWe"/>
+                        <outlet property="opponentTPLabel" destination="MaN-J6-MhW" id="J1K-xI-apg"/>
+                        <outlet property="playerHPLabel" destination="9ny-UF-l1t" id="piw-LK-M6j"/>
+                        <outlet property="playerImageView" destination="yyo-iQ-jYk" id="c8z-Mz-cdA"/>
+                        <outlet property="playerMPLabel" destination="RB0-KS-HPi" id="UZk-uk-07m"/>
+                        <outlet property="playerNameLabel" destination="sf7-0E-DbQ" id="6W0-JV-1wQ"/>
+                        <outlet property="playerTPLabel" destination="deP-mh-Yv9" id="s2w-Dx-78t"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kcn-vc-OmF" userLabel="First Responder" sceneMemberID="firstResponder"/>

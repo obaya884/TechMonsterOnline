@@ -6,9 +6,11 @@
 //  Copyright © 2017年 nagata. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import Firebase
 
-class Character {
+class Player {
     
     // キャラクターの固有値
     var name: String = ""

@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import Firebase
+import Ballcap
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        BallcapApp.configure(Firestore.firestore().document("version/1"))
+        
+        // 匿名ログイン
+        DBCommunicatoinManager.anonymousLogIn(){ player in
+            print(player?.data as Any)
+            // isLoginedをtrueにする
+            let db = Firestore.firestore().document("version/1")
+            let playerRef = db.collection("player")
+            playerRef.document(MyPlayer.sharedInstance.playerId)
+                .setData(["isLogined":true], merge: true)
+        }        
         return true
     }
 
@@ -28,10 +40,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        TechMonManager.shared.stopBGM()
+        // isLogined, isWaitingをfalseにする
+        let db = Firestore.firestore().document("version/1")
+        let playerRef = db.collection("player")
+        playerRef.document(MyPlayer.sharedInstance.playerId)
+            .setData(["isLogined":false, "isWaiting": false], merge: true)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        // isLoginedをtrueにする
+        let db = Firestore.firestore().document("version/1")
+        let playerRef = db.collection("player")
+        playerRef.document(MyPlayer.sharedInstance.playerId)
+            .setData(["isLogined":true], merge: true)
+
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {

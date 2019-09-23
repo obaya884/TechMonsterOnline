@@ -15,21 +15,7 @@ class TechMonManager {
     
     var bgmAudioPlayer: AVAudioPlayer?
     var seAudioPlayer: AVAudioPlayer?
-    var player: Character!
-    var enemy: Character!
-    
-    init() {
-        // キャラクターの設定
-        player = Character(name: "勇者", imageName: "yusya.png", attackPoint: 30, maxHP: 100, maxTP: 100, maxMP: 20)
-        enemy = Character(name: "ドラゴン", imageName: "monster.png", attackPoint: 20, maxHP: 200, maxTP: 0, maxMP: 35)
-    }
-    
-    // キャラクターたちのステータスをリセットする
-    func resetStatus() {        
-        player.resetStatus()
-        enemy.resetStatus()
-    }
-    
+
     // アニメーション
     func damageAnimation(imageView: UIImageView) {
         
@@ -101,7 +87,6 @@ class TechMonManager {
     }
     
     func stopBGM() {
-        
         // BGMが流れたままなら止められるように
         bgmAudioPlayer?.stop()
     }
